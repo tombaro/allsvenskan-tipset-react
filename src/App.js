@@ -1,5 +1,6 @@
 import React from 'react';
 import Standings from './components/Standings/';
+import Topscorers from './components/Topscorers'
 import './App.css';
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
         <h1>Allsvenskan tipset - komponenter</h1>
         <h2>Tabell</h2>
         <div><Standings/></div>
+        <h2>Skytteliga</h2>
+        <div><Topscorers/></div>
       </header>
     </div>
   );

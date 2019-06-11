@@ -4,6 +4,13 @@ export async function getStandings() {
     return parseJson(json);
 }
 
+export async function getScorersStanding() {
+    const res = await fetch('https://allsvenskan-api.herokuapp.com/as/topscorers', options);
+    const json = await checkStatus(res);
+    return parseJson(json);
+}
+
+
 const options = {
     // method: "POST", // *GET, POST, PUT, DELETE, etc.
     mode: "cors", // no-cors, cors, *same-origin
